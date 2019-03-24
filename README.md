@@ -13,9 +13,9 @@
 
 ### python
 
-python -m venv v_env : crea un ambiente virtuale 
+**python -m venv v_env** : crea un ambiente virtuale 
 
-v_env\Scripts\activate : attiva l'ambiente virtuale
+**v_env\Scripts\activate** : attiva l'ambiente virtuale
 
 # DJANGO
 
@@ -45,18 +45,25 @@ migrations  :  cartella con funzioni per la migrazione
 **python manage.py startapp nome-apppicazione** : crea la struttura dell'app, dopo la creazione è nexessario dicharare l'app nel file progetto\settings.py
 
 INSTALLED_APPS = [
+
     'django.contrib.admin',
+    
     'django.contrib.auth',
+    
     'django.contrib.contenttypes',
+    
     'django.contrib.sessions',
+    
     'django.contrib.messages',
+    
     'django.contrib.staticfiles',
+    
     'news'  <------------- nuova app
 ]
 
 
-.. Gestire i modelli :
-le tabelle e colonne vanno dichiarati nel file models.py
+### Models
+Le tabelle e colonne vanno dichiarati nel file models.py, l
 
 news\models.py
 
