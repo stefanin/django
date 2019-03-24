@@ -7,7 +7,8 @@ git commit -m "first commit"
 git remote add origin https://github.com/stefanin/django.git
 git push -u origin master
 
-. Creare un ambiente virtuale :
+Creare un ambiente virtuale 
+
 python -m venv v_env
 
 . Attivare l'ambiente virtuale
