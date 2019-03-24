@@ -1,53 +1,48 @@
 #  Appunti corso django
 
---------------GIT-----------  
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/stefanin/django.git
-git push -u origin master
+### GIT 
+**git init** ; inizializzare git
 
-Creare un ambiente virtuale 
+**git add  file** : aggiungere un file
 
-python -m venv v_env
+**git commit -m " commento "** : confermare le modifiche
 
-. Attivare l'ambiente virtuale
+**git push -u origin master**  : caricare modifiche su github
 
-v_env\Scripts\activate
+**git remote add origin https://github.com/stefanin/django.git** : clona il repository in locale
 
-. Installare Django
-pip install django
+### python
 
-.Creare un progetto django :
+python -m venv v_env : crea un ambiente virtuale 
 
-django-admin startproject nome-progetto
+v_env\Scripts\activate : attiva l'ambiente virtuale
 
-crea una directory con i file usati da djando per il progettp
-nella directory del progetto, il file manage.py permette di gestire il progetto
+# DJANGO
+
+**pip install django** : installa Django
+
+**django-admin startproject nome-progetto** : crea un progetto Django, in una directory contenente l'ambiente di sviluppo. Il file manage.py è affidata la gestione del progetto
+
+Struttora dei progetti Django
 
 __init__.py :  informa python che la dir è un pakage
+
 admin.py    :  resgistrazine modelli e interfaccia di configurazione
+
 admin.py    :  configurazione specifiche dell'prima_app
-admin.py    :  classi dei modelli della nostra prima_app
+
+models.py   : classi dei modelli 
+
 tests.py    :  funzioni di test dell'app
+
 views.py    :  viste dell'app
+
 migrations  :  cartella con funzioni per la migrazione
 
-es.
-# django-admin startproject djamgo_livello_due
 
-.. Server web di test
-python manage.py runserver : avvia il server di test
+**python manage.py runserver** : avvia il server di test
 
-.. Creare un app :
-
-python manage.py startapp nome-apppicazione
-
-crea l'ambiente relativo alla app nella directory con il nome-apppicazione
-
-# python manage.py startapp news
-
-dopo la creazione è nexessario dicharare l'app nel file progetto\settings.py
+**python manage.py startapp nome-apppicazione** : crea la struttura dell'app, dopo la creazione è nexessario dicharare l'app nel file progetto\settings.py
 
 INSTALLED_APPS = [
     'django.contrib.admin',
